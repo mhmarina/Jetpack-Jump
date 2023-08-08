@@ -35,24 +35,24 @@ public class CollisionHandler : MonoBehaviour
     void initiateCrash() {
         if (isAlive)
         {
+            isAlive = false;
             SFX.Stop();
             SFX.PlayOneShot(crash);
             crashParticles.Play();
             GetComponent<Movement>().enabled = false;
-        }
-        isAlive = false;
-        Invoke("ReloadLevel", 1.216f);
+            Invoke("ReloadLevel", 1.216f);
+        } 
     }
     void initiateSuccess() {
         if (isAlive)
         {
+            isAlive = false;
             SFX.Stop();
             SFX.PlayOneShot(success);
             successParticles.Play();
             GetComponent<Movement>().enabled = false;
+            Invoke("LoadNextLevel", 1f);
         }
-        isAlive = false; 
-        Invoke("LoadNextLevel", 1f);
     }
     public void ReloadLevel() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
