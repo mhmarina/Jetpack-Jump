@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.50340277, g: 0.29576647, b: 0.47914815, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1026,8 +1026,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0f0142cfc0791243ad3af7f5e7af7eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementVector: {x: 0, y: 5, z: 0}
-  period: 2
+  movementVector: {x: 0, y: 17.5, z: 0}
+  period: 8
 --- !u!4 &2006118382 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6830801776565427823, guid: 1937b879a46431046aaa8ea0e481232a, type: 3}
