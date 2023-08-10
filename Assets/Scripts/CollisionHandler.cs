@@ -68,4 +68,10 @@ public class CollisionHandler : MonoBehaviour
             SceneManager.LoadScene(0);
         }
     }
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.RightArrow)) {
+            LoadNextLevel();
+        }
+    }
 }
